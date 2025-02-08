@@ -8,7 +8,7 @@ function Chocolate() {
   let chocolateItems = useSelector(state => state.products?.chocolate || []); // Handle undefined safely
   let dispatch = useDispatch();
 
-  const perPage = 6; // Number of items per page
+  const perPage = 5; // Number of items per page
   const totalPages = Math.ceil(chocolateItems.length / perPage); // Calculate total pages
 
   const [pageNumber, setPageNumber] = useState(1); // State for the current page number

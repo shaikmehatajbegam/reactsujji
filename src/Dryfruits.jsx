@@ -7,7 +7,7 @@ function Dryfruits() {
     let dryFruitItems = useSelector(state => state.products.dryfruits); // Fetch dry fruits items
     let dispatch = useDispatch();
 
-    const perPage = 6; // Items per page
+    const perPage = 5; // Items per page
     const totalPages = Math.ceil(dryFruitItems.length / perPage); // Total pages
     const [pageNumber, setPageNumber] = useState(1); // Current page state
 
