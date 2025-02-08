@@ -2,14 +2,14 @@ import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from 'react-router-dom';
 
-function AboutUs() {
+function Aboutus() {
     
     const navigate = useNavigate(); // Initialize navigate function
 
 
     return (
         <div className="container mt-5">
-            <h2 className="text-center text-primary mb-4">About Us</h2>
+            <h2 className="text-center text-primary mb-4">Aboutgit Us</h2>
 
             <div className="row align-items-center">
                 <div className="col-md-6">
@@ -53,4 +53,4 @@ function AboutUs() {
     );
 }
 
-export default AboutUs;
+export default Aboutus;

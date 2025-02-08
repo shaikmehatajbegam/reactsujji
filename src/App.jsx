@@ -17,7 +17,8 @@ import Chocolate from "./Chocolate";
 import DryFruits from "./Dryfruits";
 
 import "./App.css";
-import AboutUs from "./Aboutus";
+import Aboutus from "./Aboutus";
+
 
 function App() {
   const cart = useSelector((state) => state.cart);
@@ -93,7 +94,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/order" element={<Order />} />
         <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/aboutus" element={<Aboutus/>} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
