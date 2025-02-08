@@ -6,7 +6,7 @@ import Nonveg from "./Nonveg";
 import Cart from "./Cart";
 import Milk from "./Milk";
 import Order from "./Order";
-import Aboutus from "./Aboutus";
+import AboutUs from "./Aboutus";
 import Contactus from "./Contactus";
 import "./App.css";
 import { useDispatch, useSelector,  } from "react-redux";
@@ -18,6 +18,7 @@ import { logout } from "./Store";
 import "@fortawesome/fontawesome-free/css/all.min.css"; // Font Awesome (if not included in index.html)
 import Chocolate from "./Chocolate";
 import Dryfruits from "./Dryfruits";
+
 
 
 
@@ -68,11 +69,11 @@ function App() {
 </Link>
 
 <Link to="/aboutus" className="linkstyle">
-  <i className="fa-solid fa-users me-2 text-secondary"></i> About Us
+  <i className="fa-solid fa-users me-2 text-secondary"></i> AboutUs
 </Link>
 
 <Link to="/contactus" className="linkstyle">
-  <i className="fa-solid fa-envelope me-2 text-dark"></i> Contact Us
+  <i className="fa-solid fa-envelope me-2 text-dark"></i> ContactUs
 </Link>
 
 
@@ -97,7 +98,7 @@ function App() {
           <Route path="/dryfruits" element={<Dryfruits />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/order" element={<Order />} />
-          <Route path="/aboutus" element={<Aboutus />} />
+          <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contactus" element={<Contactus />} />
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<Notfound />} /> 
