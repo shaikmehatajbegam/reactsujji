@@ -13,7 +13,6 @@ import Order from "./Order";
 
 import Chocolate from "./Chocolate";
 import "./App.css";
-import Aboutus from "./Aboutus";
 import Contactus from "./Contactus";
 import Dryfruits from "./Dryfruits";
 import Notfound from "./Notfound";
@@ -60,9 +59,7 @@ function App() {
             <i className="fa-solid fa-receipt me-2 text-info"></i> Order
           </Link>
 
-          <Link to="/aboutus" className="nav-link">
-            <i className="fa-solid fa-users me-2 text-secondary"></i> Aboutus
-          </Link>
+          
 
           <Link to="/contactus" className="nav-link">
             <i className="fa-solid fa-envelope me-2 text-dark"></i> ContactUs
@@ -94,7 +91,6 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/order" element={<Order />} />
         <Route path="/contactus" element={<Contactus/>} />
-        <Route path="/aboutus" element={<Aboutus/>}/>
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<Notfound />} />
       </Routes>
