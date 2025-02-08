@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ContactUs() {
+function Contactus() {
   return (
    <>
       <h2 className="text-center mb-4">
@@ -34,4 +34,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
+export default Contactus;

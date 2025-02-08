@@ -10,14 +10,14 @@ import Nonveg from "./Nonveg";
 import Cart from "./Cart";
 import Milk from "./Milk";
 import Order from "./Order";
-import ContactUs from "./Contactus"; 
-import NotFound from "./Notfound";
-import Login from "./Login";
-import Chocolate from "./Chocolate";
-import DryFruits from "./Dryfruits";
 
+import Chocolate from "./Chocolate";
 import "./App.css";
 import Aboutus from "./Aboutus";
+import Contactus from "./Contactus";
+import Dryfruits from "./Dryfruits";
+import Notfound from "./Notfound";
+import Login from "./Login";
 
 
 function App() {
@@ -61,7 +61,7 @@ function App() {
           </Link>
 
           <Link to="/aboutus" className="nav-link">
-            <i className="fa-solid fa-users me-2 text-secondary"></i> AboutUs
+            <i className="fa-solid fa-users me-2 text-secondary"></i> Aboutus
           </Link>
 
           <Link to="/contactus" className="nav-link">
@@ -78,7 +78,7 @@ function App() {
               </button>
             </>
           ) : (
-            <Link to="/login" className="btn btn-primary btn-sm">Sign in</Link>
+            <Link to="/login" className="btn btn-primary btn-sm">Login in</Link>
           )}
         </div>
       </nav>
@@ -90,13 +90,13 @@ function App() {
         <Route path="/nonveg" element={<Nonveg />} />
         <Route path="/milk" element={<Milk />} />
         <Route path="/chocolate" element={<Chocolate />} />
-        <Route path="/dryfruits" element={<DryFruits />} />
+        <Route path="/dryfruits" element={<Dryfruits />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/order" element={<Order />} />
-        <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/aboutus" element={<Aboutus/>} />
+        <Route path="/contactus" element={<Contactus/>} />
+        <Route path="/aboutus" element={<Aboutus/>}/>
         <Route path="/login" element={<Login />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<Notfound />} />
       </Routes>
     </BrowserRouter>
   );
