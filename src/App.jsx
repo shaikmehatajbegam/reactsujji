@@ -13,10 +13,12 @@ import Order from "./Order";
 
 import Chocolate from "./Chocolate";
 import "./App.css";
+import AboutUs from "./Aboutus";
 import Contactus from "./Contactus";
 import Dryfruits from "./Dryfruits";
 import Notfound from "./Notfound";
 import Login from "./Login";
+
 
 
 function App() {
@@ -59,7 +61,9 @@ function App() {
             <i className="fa-solid fa-receipt me-2 text-info"></i> Order
           </Link>
 
-          
+          <Link to="/aboutus" className="nav-link">
+  <i className="fa-solid fa-seedling me-2 text-warning"></i> About Us
+</Link>
 
           <Link to="/contactus" className="nav-link">
             <i className="fa-solid fa-envelope me-2 text-dark"></i> ContactUs
@@ -90,6 +94,7 @@ function App() {
         <Route path="/dryfruits" element={<Dryfruits />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/order" element={<Order />} />
+        <Route path="/aboutus" element={<AboutUs/>} />
         <Route path="/contactus" element={<Contactus/>} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<Notfound />} />
