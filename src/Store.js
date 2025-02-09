@@ -19,7 +19,7 @@ const productSlice = createSlice({
             { name: "garlic", price: 50, image: "garlic.jpg" },
             { name: "ivy gourd", price: 50, image: "ivy gourd.jpg" },
             { name: "cauliflower", price: 50, image: "cauliflower.jpg" },
-            { name: "gourd", price: 50, image: "gourd.jpg" },
+            
         ],
         nonveg: [
             { name: "Fish", price: 100, image: "fish.jpg" },
@@ -38,7 +38,6 @@ const productSlice = createSlice({
         chocolate: [
             { name: "Dairy Milk", price: 400, image: "dairymilk.jpg" },
             { name: "Kitkat", price: 200, image: "kitkat.jpg" },
-            { name: "Galaxy", price: 320, image: "galaxy.jpg" },
             { name: "Bounty", price: 70, image: "bounty.jpg" },
             { name: "Bournville", price: 80, image: "bournville.jpg" },
             { name: "Fivestar", price: 100, image: "fivestar.jpg" },
