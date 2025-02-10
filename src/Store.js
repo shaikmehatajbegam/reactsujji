@@ -28,6 +28,22 @@ const productSlice = createSlice({
             { name: "Egg", price: 180, image: "egg.jpg" },
             { name: "Prawns", price: 200, image: "prawns.jpg" },
         ],
+
+        fruits:[
+            { name: "Apple", price: 80, image: "Apple.jpg"},
+            { name: "Banana", price: 80, image: "Banana.png"},
+
+            { name: "Strawberry", price: 80, image: "Strawberry.jpg"},
+            { name: "Kiwi", price: 80, image: "kiwi.jpg"},
+
+            { name: "Mango", price: 80, image: "mango.png"},
+
+            { name: "Papaya", price: 80, image: "papaya.png"},
+            { name: "Orange", price: 80, image: "orange.png"},
+
+            { name: "Watermelon", price: 80, image: "watermelon.png"},
+            { name: "Grapes", price: 80, image: "grape.png"},
+        ],
         milk: [
             { name: "Jersey", price: 20, image: "jersey.jpg" },
             { name: "CountryDelight", price: 50, image: "countrydelight.jpg" },

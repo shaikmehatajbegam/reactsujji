@@ -15,15 +15,18 @@ const selectAllItems = createSelector(
     return {
       veg: products?.veg || [],               // Fallback to empty array if undefined
       nonveg: products?.nonveg || [],
+      fruits: products?.fruits || [],
       milk: products?.milk || [],
       chocolate: products?.chocolate || [],
       dryfruits: products?.dryfruits || [],
       all: [
         ...(products?.veg || []),
         ...(products?.nonveg || []),
+        ...(products?.fruits|| []),
         ...(products?.milk || []),
         ...(products?.chocolate || []),
         ...(products?.dryfruits || []),
+        
       ], // Combine all categories into one array
     };
   }
@@ -68,6 +71,7 @@ const selectAllItems = createSelector(
           <option value="all">All Items</option>
           <option value="veg">Veg 🥦</option>
           <option value="nonveg">Non-Veg 🍗</option>
+          <option value="fruits">Fruits 🍎</option>
           <option value="milk">Milk 🥛</option>
           <option value="chocolate">Chocolate 🍫</option>
           <option value="dryfruits">Dry Fruits 🌰</option>

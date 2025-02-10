@@ -18,6 +18,7 @@ import Contactus from "./Contactus";
 import Dryfruits from "./Dryfruits";
 import Notfound from "./Notfound";
 import Login from "./Login";
+import Fruits from "./Fruits";
 
 
 
@@ -42,6 +43,11 @@ function App() {
           <Link to="/nonveg" className="nav-link">
             <i className="fa-solid fa-drumstick-bite me-2 text-danger"></i> Non-Veg
           </Link>
+
+          <Link to="/fruits" className="nav-link">
+  <i className="fa-solid fa-apple-alt me-2 text-danger"></i> Fruits
+</Link>
+
           <Link to="/milk" className="nav-link">
             <i className="fa-solid fa-mug-hot me-2 text-warning"></i> Milk
           </Link>
@@ -89,6 +95,9 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/veg" element={<Veg />} />
         <Route path="/nonveg" element={<Nonveg />} />
+      
+<Route path="/fruits" element={<Fruits />} />
+
         <Route path="/milk" element={<Milk />} />
         <Route path="/chocolate" element={<Chocolate />} />
         <Route path="/dryfruits" element={<Dryfruits />} />

@@ -8,7 +8,7 @@ function Nonveg() {
 
   return (
     <div className="container mt-4">
-      <h2 className="text-center text-danger">Welcome to Non-Veg Items 🍗</h2>
+      <h2 className="text-center text-warning">Welcome to Non-Veg Items 🍗</h2>
       <div className="row">
         {nonvegItems.map((item, index) => (
           <div key={index} className="col-md-4">
